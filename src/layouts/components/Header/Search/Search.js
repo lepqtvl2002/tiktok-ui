@@ -1,11 +1,12 @@
 import clsx from "clsx";
 import React, { useEffect, useState, useRef } from "react";
 import TippyHeadless from "@tippyjs/react/headless";
-import { Wrapper as PopperWrapper } from "~/components/Popper";
-import { AccountItem } from "~/components/Account";
-import style from "./Search.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+
+import style from "./Search.module.scss";
+import { Wrapper as PopperWrapper } from "~/components/Popper";
+import { AccountItem } from "~/components/Account";
 import { IconSearch } from "~/components/Icons";
 import { useDebounce } from "~/hook";
 import * as services from "~/services/searchService";

@@ -3,7 +3,7 @@ import clsx from "clsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import style from "./Profile.module.scss";
-import { Button } from "~/components";
+import Button from "~/components/Button";
 import Image from "~/components/Image";
 
 function Profile({ avatar, fullName, nickname, tick, size }) {

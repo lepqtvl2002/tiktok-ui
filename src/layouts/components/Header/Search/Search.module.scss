@@ -45,6 +45,9 @@ $buttonSize: 52px;
 
 .search-result {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
 .search-title {

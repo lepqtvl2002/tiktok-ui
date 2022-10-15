@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Tippy from "@tippyjs/react/headless";
 import style from "./Sidebar.module.scss";
 import { Menu, MenuItem } from "~/components/Menu";
-import { Button } from "~/components";
+import Button from "~/components/Button";
 import { AccountItem, Profile } from "~/components/Account";
 import { Wrapper as PopperWrapper } from "~/components/Popper";
 import { IconHome, IconFollower, IconLIVE, IconMusic } from "~/components/Icons";
