@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+
 import style from "./AccountItem.module.scss";
 import Image from "~/components/Image";
-import { Link } from "react-router-dom";
 
 function AccountItem({ avatar, fullName, nickname, tick, size }) {
     return (
@@ -12,10 +13,10 @@ function AccountItem({ avatar, fullName, nickname, tick, size }) {
             <Image className={clsx(style.avatar)} src={avatar} alt="Account item" />
             <div className={clsx(style.content)}>
                 <div className={clsx(style.heading)}>
-                    <h4 className={clsx(style.name)}>{fullName}</h4>
+                    <h4 className={clsx(style.name)}>{nickname}</h4>
                     {tick && <FontAwesomeIcon icon={faCircleCheck} className={clsx(style.tick)} />}
                 </div>
-                <span className={clsx(style.nickname)}>{nickname}</span>
+                <span className={clsx(style.description)}>{fullName}</span>
             </div>
         </Link>
     );

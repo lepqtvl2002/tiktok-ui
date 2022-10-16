@@ -2,7 +2,7 @@
     padding: 20px 0px 26px 16px;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 31%;
 }
 
 .container {
@@ -41,14 +41,14 @@
     margin-bottom: 20px;
 }
 
-.suggest-container,
+.user-container,
 .discover-container,
 .footer-container {
     padding: 16px 0;
 }
 
-.suggest-title,
-.suggest-more,
+.user-title,
+.show-more,
 .discover-title {
     padding: 0 8px;
     line-height: 20px;
@@ -56,13 +56,13 @@
     font-weight: 600;
 }
 
-.suggest-title,
+.user-title,
 .discover-title {
     margin-bottom: 8px;
     color: rgba(22, 24, 35, 0.75);
 }
 
-a.suggest-more {
+a.show-more {
     margin-top: 8px;
     color: var(--primary);
 }

@@ -15,6 +15,7 @@ function MenuItem({
     children,
     leftIcon,
     rightIcon,
+    activeIcon,
     active,
     separate,
 }) {
@@ -42,9 +43,25 @@ function MenuItem({
 
     return (
         <Comp className={classes} {...props}>
-            {leftIcon && <i className={clsx(style.icon)}>{leftIcon}</i>}
+            {leftIcon ? (
+                active && activeIcon ? (
+                    <i className={clsx(style.icon)}>{activeIcon}</i>
+                ) : (
+                    <i className={clsx(style.icon)}>{leftIcon}</i>
+                )
+            ) : (
+                <></>
+            )}
             <span className={clsx(style.title)}>{children}</span>
-            {rightIcon && <i className={clsx(style.icon)}>{rightIcon}</i>}
+            {rightIcon ? (
+                active && activeIcon ? (
+                    <i className={clsx(style.icon)}>{activeIcon}</i>
+                ) : (
+                    <i className={clsx(style.icon)}>{rightIcon}</i>
+                )
+            ) : (
+                <></>
+            )}
         </Comp>
     );
 }
@@ -60,6 +77,7 @@ MenuItem.propTypes = {
     children: PropTypes.node.isRequired,
     leftIcon: PropTypes.node,
     rightIcon: PropTypes.node,
+    activeIcon: PropTypes.node,
     active: PropTypes.bool,
     separate: PropTypes.bool,
 };

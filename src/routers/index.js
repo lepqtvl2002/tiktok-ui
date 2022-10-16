@@ -1,5 +1,5 @@
 import DefaultLayout, { OnlyHeader } from "~/layouts";
-import { Home, Following, Upload, Search, Profile } from "~/pages";
+import { Home, Following, Upload, Search, Profile, Live } from "~/pages";
 import config from "~/config";
 
 const publicRouters = [
@@ -33,6 +33,14 @@ const publicRouters = [
         component: (
             <DefaultLayout>
                 <Profile />
+            </DefaultLayout>
+        ),
+    },
+    {
+        path: config.routes.live,
+        component: (
+            <DefaultLayout>
+                <Live />
             </DefaultLayout>
         ),
     },
