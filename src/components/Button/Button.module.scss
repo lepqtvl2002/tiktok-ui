@@ -1,82 +1,87 @@
 .wrapper {
-    min-width: 100px;
-    min-height: 36px;
-    padding: 0 16px;
-    border-radius: 4px;
-    font-size: 1.6rem;
-    font-weight: 600;
-    font-family: inherit;
-    background-color: white;
-    border: 1px solid #e2e3e4;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    user-select: none;
+  min-width: 100px;
+  min-height: 36px;
+  padding: 0 16px;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: white;
+  border: 1px solid #e2e3e4;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  user-select: none;
+  outline: none;
 
-    &:hover {
-        background-color: #e2e3e4;
-    }
+  &:hover {
+    background-color: #e2e3e4;
+  }
 }
 
 .wrapper + .wrapper {
-    margin-left: 16px;
+  margin-left: 16px;
 }
 
 .icon + .title,
 .title + .icon {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 .disabled {
-    cursor: none;
-    opacity: 0.6;
+  cursor: none;
+  opacity: 0.6;
 }
 
 // button size
 .small {
-    min-width: 88;
-    padding: 4px 16px;
+  min-width: 88;
+  padding: 4px 16px;
 }
 
 .large {
-    width: 100%;
-    min-width: 112px;
-    min-height: 48px;
-    font-size: 1.8rem;
+  width: 100%;
+  min-width: 112px;
+  min-height: 48px;
+  font-size: 1.8rem;
+}
+
+.long {
+  min-width: 146px;
 }
 
 // button shape
 .rounded {
-    border-radius: 999px;
-    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
-    border-color: rgba(22, 24, 35, 0.12);
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+  border-color: rgba(22, 24, 35, 0.12);
 
-    &:hover {
-        border-color: rgba(22, 24, 35, 0.2);
-        background-color: rgba(22, 24, 35, 0.03);
-    }
+  &:hover {
+    border-color: rgba(22, 24, 35, 0.2);
+    background-color: rgba(22, 24, 35, 0.03);
+  }
 }
 
 // button color
 .primary {
-    color: white;
-    background-color: var(--primary);
-    border-color: currentColor;
+  color: white;
+  background-color: var(--primary);
+  border-color: var(--primary);
 
-    &:hover {
-        border-color: currentColor;
-        background-color: #ef2950;
-    }
+  &:hover {
+    border-color: var(--primary);
+    background-color: #ef2950;
+  }
 }
 
 // button outline
 .primary-outline {
-    color: var(--primary);
-    background-color: white;
-    border-color: var(--primary);
+  color: var(--primary);
+  background-color: white;
+  border-color: var(--primary);
 
-    &:hover {
-        background-color: #fff2f5;
-    }
+  &:hover {
+    background-color: #fff2f5;
+  }
 }

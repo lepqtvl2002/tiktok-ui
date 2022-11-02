@@ -1,13 +1,10 @@
 import clsx from "clsx";
 import { Header, Sidebar } from "../components";
-import style from "./DefaultLayout.module.scss";
-
-function DefaultLayout({ children }) {
+import style from "./LiveLayout.module.scss";
+function LiveLayout({ children }) {
   return (
     <div className={clsx(style.wrapper)}>
-      <div className={clsx(style.header)}>
-        <Header />
-      </div>
+      <Header live />
       <div className={clsx(style.container)}>
         <div className={clsx(style.sidebar)}>
           <Sidebar />
@@ -18,4 +15,4 @@ function DefaultLayout({ children }) {
   );
 }
 
-export default DefaultLayout;
+export default LiveLayout;
